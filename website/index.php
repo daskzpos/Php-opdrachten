@@ -34,3 +34,4 @@ if ($objectauto['snelheid'] < 50 && $objectauto['snelheid'] > 0){
 } else {
     echo "deze auto rijdt niet";
 }
+
