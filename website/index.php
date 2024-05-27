@@ -21,15 +21,15 @@
 
 // if ($objectauto['kleur'] == 'rood'){
 // echo "ik ben een rode auto!";
- } else {
-    echo "ik ben een auto met een andere kleur.";
- }
- if ($objectauto['snelheid'] < 50 && $objectauto['snelheid'] > 0){
-     echo "dit is een langzame auto";
- } elseif ($objectauto['snelheid'] >= 50 && $objectauto['snelheid'] <= 100){
-    echo "dit is een normale auto";
- } elseif ($objectauto['snelheid'] > 100){
-     echo "dit is een snelle auto";
- } else {
-    echo "deze auto rijdt niet";
-}
+// } else {
+//    echo "ik ben een auto met een andere kleur.";
+// }
+//if ($objectauto['snelheid'] < 50 && $objectauto['snelheid'] > 0){
+//     echo "dit is een langzame auto";
+// } elseif ($objectauto['snelheid'] >= 50 && $objectauto['snelheid'] <= 100){
+//    echo "dit is een normale auto";
+// } elseif ($objectauto['snelheid'] > 100){
+//     echo "dit is een snelle auto";
+// } else {
+//    echo "deze auto rijdt niet";
+//}

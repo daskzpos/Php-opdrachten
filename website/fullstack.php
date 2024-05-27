@@ -1,7 +1,9 @@
 <?php
+
 require("database.php");
 
 $sql1 = "create database MyDB";
+
 if($conn->query($sql1) === true){
     echo "Database created successfully";
 } else {
