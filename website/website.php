@@ -16,20 +16,26 @@
 </form>
 <?php
 require ('database.php');
- echo "$_POST[naam] is aangemaakt.<br> ";
- echo "Dit is de email die van jou is: $_POST[email] ";
- if ($_POST['naam'] == "danique") {
-    echo "<br><br>rood harige <br><br>";
- }
+ echo "<br><br>$_POST[naam] is aangemaakt.<br><br> ";
+ echo "Dit is je email: $_POST[email] ";
 
- $sql = "INSERT INTO MyGuests (bandname) values ('The Beatles')";
+$band = $_POST['naam'];
+
+ $sql = "INSERT INTO MyGuests (bandname) values ('$band')";
  if($conn->query($sql) === true) {
-        echo "updated";
+        echo "<br><br>updated<br><br>";
     }else{
-        echo "Error: " . $conn->error;
+        echo "<br><br>Error: <br><br>" . $conn->error;
     }
 
-    
+$result = $conn->query($sql);
+if ($result){
+    echo "<br>het is gelukt!<br>";
+}else{
+    echo "<br><br>het is niet gelukt!<br><br>";
+}
+
+
 ?>
 </body>
 </html>
