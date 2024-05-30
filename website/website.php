@@ -15,13 +15,21 @@
     <button type="submit">verzenden</button>
 </form>
 <?php
+require ('database.php');
  echo "$_POST[naam] is aangemaakt.<br> ";
  echo "Dit is de email die van jou is: $_POST[email] ";
  if ($_POST['naam'] == "danique") {
     echo "<br><br>rood harige <br><br>";
-    echo("welkom rood harige meisje. als je dit leest ben je een sukkel. kut kind dat je bent.");
  }
 
+ $sql = "INSERT INTO MyGuests (bandname) values ('The Beatles')";
+ if($conn->query($sql) === true) {
+        echo "updated";
+    }else{
+        echo "Error: " . $conn->error;
+    }
+
+    
 ?>
 </body>
 </html>
