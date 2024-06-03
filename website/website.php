@@ -12,7 +12,7 @@
     <input type="text" name="naam">
     <p><strong>vul hier je email in</strong></p>
     <input type="text" name="email"><br><br>
-    <button type="submit">verzenden</button>
+    <button type="submit">submit</button>
 </form>
 <?php
 require ('database.php');
