@@ -14,8 +14,11 @@
     <input type="text" name="email"><br><br>
     <button type="submit">submit</button>
 </form>
+
+
+
 <?php
-require ('database.php');
+require ('conn database.php');
  echo "<br><br>$_POST[naam] is aangemaakt.<br><br> ";
  echo "Dit is je email: $_POST[email] ";
 
@@ -35,7 +38,16 @@ if ($result){
     echo "<br><br>het is niet gelukt!<br><br>";
 }
 
+while($row = $result->fetch_array()){
+echo "$row";
+}if ($result->num_rows>0){
+    echo "oops";
+}
+
 
 ?>
+
+
+
 </body>
 </html>

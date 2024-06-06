@@ -1,6 +1,6 @@
 <?php
 
-require ('database.php');
+require ('conn database.php');
 // $sql1 = "CREATE DATABASE MyDB" ;
 // if($conn->query($sql1) === true){
 //     echo "Database created succesfully";
