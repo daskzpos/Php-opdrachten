@@ -38,7 +38,7 @@ if ($result){
     echo "<br><br>het is niet gelukt!<br><br>";
 }
 
-while($row = $result->fetch_array()){
+while($row = $result->fetch_assoc()){
 echo "$row";
 }if ($result->num_rows>0){
     echo "oops";
