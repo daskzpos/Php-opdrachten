@@ -3,24 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="index.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <title>invulformulier</title>
 </head>
 <body>
-<form method="post" action="http://localhost/php-opdrachten/website/website.php">
-    <p><strong>vul hier je naam in</strong></p>
+<method="post" action="http://localhost/php-opdrachten/website/website.php"></method>
+<form>
+    <p><strong>voeg hier een band toe</strong></p>
     <input type="text" name="naam">
-    <p><strong>vul hier je email in</strong></p>
-    <input type="text" name="email"><br><br>
-    <button type="submit">submit</button>
-</form>
-
+    <br>
+    <p><strong>selecteer hier de genre in</strong></p>
+    <select naam="genre" id="genre" multiple>
+    <option value="Rock">Rock</option>
+    <option value="Pop">Pop</option>
+    <option value="Jazz">Jazz</option>
+    <option value="Hip-Hop">Hip-Hop</option>
+</select>
+    <br>
+      <input type="submit">
+    </form>
 
 
 <?php
 require ('conn database.php');
- echo "<br><br>$_POST[naam] is aangemaakt.<br><br> ";
- echo "Dit is je email: $_POST[email] ";
+ echo "<br><br>$_POST[band] is toegevoegd.<br><br> ";
+ echo "met de genre: $_POST[genre] ";
 
 $band = $_POST['naam'];
 
