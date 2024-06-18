@@ -22,7 +22,7 @@
     </select>
     <br>
       <input type="submit">
-    </form>
+</form>
 
 
 <?php

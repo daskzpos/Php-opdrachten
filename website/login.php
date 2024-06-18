@@ -12,11 +12,11 @@
 <br>
 <br>
 <form>
-<input type="text" name="login">
+   <input type="text" name="login">
 <br><br>
-<input type="password" name="pw">
+   <input type="password" name="pw">
 <br><br>
-<input type="submit">
+   <input type="submit">
 </form>
 
 
