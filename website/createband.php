@@ -6,20 +6,20 @@
     <link href="styles.css" rel="stylesheet">
     <title>invulformulier</title>
 </head>
-<body>
-    <a href="http://localhost/php-opdrachten/website/login.php">login<a
-<method="post" action="http://localhost/php-opdrachten/website/website.php"></method>
+<a>
+ <method="post" action="http://localhost/php-opdrachten/website/createband.php"></method>   
+ <a href="http://localhost/php-opdrachten/website/website.php">HOME</a>
 <form>
     <p><strong>voeg hier een band toe</strong></p>
     <input type="text" name="naam">
     <br>
     <p><strong>selecteer hier de genre in</strong></p>
     <select naam="genre" id="genre" multiple>
-    <option value="Rock">Rock</option>
-    <option value="Pop">Pop</option>
-    <option value="Jazz">Jazz</option>
-    <option value="Hip-Hop">Hip-Hop</option>
-</select>
+      <option value="Rock">Rock</option>
+      <option value="Pop">Pop</option>
+      <option value="Jazz">Jazz</option>
+      <option value="Hip-Hop">Hip-Hop</option>
+    </select>
     <br>
       <input type="submit">
     </form>

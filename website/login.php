@@ -7,8 +7,10 @@
     <title>invulformulier</title>
 </head>
 <body>
-<a href="http://localhost/php-opdrachten/website/website.php">HOME<a
 <method="post" action="http://localhost/php-opdrachten/website/login.php"></method>
+<a href="http://localhost/php-opdrachten/website/website.php">HOME</a>
+<br>
+<br>
 <form>
 <input type="text" name="login">
 <br><br>
@@ -16,6 +18,7 @@
 <br><br>
 <input type="submit">
 </form>
+
 
 <?php
 require ('conn database.php');

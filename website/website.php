@@ -8,13 +8,15 @@
 </head>
 <body>
 <method="post" action="http://localhost/php-opdrachten/website/website.php"></method>
-<a href="http://localhost/php-opdrachten/website/login.php">LOGIN<a
+<a href="http://localhost/php-opdrachten/website/login.php">LOGIN<a>
 <br> <br>
-
 <p1><strong>PROGAMMA</strong></p1>
 
 
 <?php
+
+
+
 ?>
 </body>
 </html>
