@@ -7,12 +7,12 @@
     <title>invulformulier</title>
 </head>
 <body>
-    <header>
-        <a href="http://localhost/php-opdrachten/website/login.php">LOGIN<a>
-    </header>
 <method="post" action="http://localhost/php-opdrachten/website/website.php"></method>
+<header>
+    <a href="http://localhost/php-opdrachten/website/login.php">LOGIN<a>
+</header>
 <br> <br>
-<p1><strong>PROGAMMA</strong></p1>
+<h1>PROGAMMA</h1>
 
 
 <?php

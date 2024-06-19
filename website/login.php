@@ -8,12 +8,17 @@
 </head>
 <body>
 <method="post" action="http://localhost/php-opdrachten/website/login.php"></method>
-<a href="http://localhost/php-opdrachten/website/website.php">HOME</a>
+<header>
+   <a href="http://localhost/php-opdrachten/website/website.php">HOME</a>
+</header>
 <br>
 <br>
+<h1>LOGIN</h1>
 <form>
+   <p>username</p>
    <input type="text" name="login">
 <br><br>
+   <p>password</p>
    <input type="password" name="pw">
 <br><br>
    <input type="submit">
