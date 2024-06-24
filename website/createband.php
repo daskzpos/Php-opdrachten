@@ -1,3 +1,8 @@
+<?php
+require ('conn database.php');
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,29 +13,38 @@
 </head>
 <a>
  <method="post" action="http://localhost/php-opdrachten/website/createband.php"></method>   
- <a href="http://localhost/php-opdrachten/website/website.php">HOME</a>
+ <header>
+  <a href="http://localhost/php-opdrachten/website/website.php">HOME</a>  
+ </header>
+ 
 <form>
     <p><strong>voeg hier een band toe</strong></p>
-    <input type="text" name="naam">
+    <input type="text" name="band">
     <br>
-    <p><strong>selecteer hier de genre in</strong></p>
-    <select naam="genre" id="genre" multiple>
-      <option value="Rock">Rock</option>
-      <option value="Pop">Pop</option>
-      <option value="Jazz">Jazz</option>
-      <option value="Hip-Hop">Hip-Hop</option>
-    </select>
+    <p><strong>selecteer hier de genre</strong></p>
+    <input type="radio" name="genre" id="rock" value="Rock">
+      <label for="Rock">Rock</label>
+      <br>
+    <input type="radio" name="genre" id="pop" value="Pop">
+      <label for="Pop">Pop</label>
+      <br>
+    <input type="radio" name="genre" id="jazz" value="Jazz">
+      <label for="Jazz">Jazz</label>
+      <br>
+    <input type="radio" name="genre" id="hiphop" value="Hip-Hop">
+      <label for="Hip-Hop">Hip-Hop</label>
+      <br>
+    </input>
     <br>
       <input type="submit">
 </form>
 
 
 <?php
-require ('conn database.php');
- echo "<br><br>$_POST[band] is toegevoegd.<br><br> ";
- echo "met de genre: $_POST[genre] ";
+ echo $_POST['band'];
+ echo $_POST['genre'];
 
-$band = $_POST['naam'];
+$band = $_POST['band'];
 
  $sql = "INSERT INTO MyGuests (bandname) values ('$band')";
  if($conn->query($sql) === true) {
@@ -39,12 +53,12 @@ $band = $_POST['naam'];
         echo "<br><br>Error: <br><br>" . $conn->error;  
     }
 
-// $result = $conn->query($sql);
-// if ($result){
-//     echo "<br>het is gelukt!<br>";
-// }else{
-//     echo "<br><br>het is niet gelukt!<br><br>";
-// }
+$result = $conn->query($sql);
+if ($result){
+    echo "<br>het is gelukt!<br>";
+}else{
+    echo "<br><br>het is niet gelukt!<br><br>";
+}
 
 // while($row = $result->fetch_assoc()){
 // echo "$row";

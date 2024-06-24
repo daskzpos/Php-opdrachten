@@ -1,3 +1,8 @@
+<?php
+require ('conn database.php');
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +31,9 @@
 
 
 <?php
-require ('conn database.php');
+$_session['login'];
+$_session['pw'];
+
 
 ?>
 </body>
