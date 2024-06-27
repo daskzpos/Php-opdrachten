@@ -1,6 +1,6 @@
 <?php
-require ('conn database.php');
 session_start();
+require ('conn database.php');
 ?>
 
 <!DOCTYPE html>
@@ -19,6 +19,7 @@ session_start();
 </header>
 <br> <br>
 <h1>PROGAMMA</h1>
+
 
 
 <?php

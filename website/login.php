@@ -1,6 +1,7 @@
 <?php
-require ('conn database.php');
 session_start();
+require ('conn database.php');
+
 ?>
 
 <!DOCTYPE html>
@@ -31,9 +32,6 @@ session_start();
 
 
 <?php
-$_session['login'];
-$_session['pw'];
-
 
 ?>
 </body>

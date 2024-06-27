@@ -1,6 +1,6 @@
 <?php
-require ('conn database.php');
 session_start();
+require ('conn database.php');
 ?>
 
 <!DOCTYPE html>
@@ -41,17 +41,14 @@ session_start();
 
 
 <?php
- echo $_POST['band'];
- echo $_POST['genre'];
 
-$band = $_POST['band'];
+if(!empty($_POST['band'])){
+echo $_POST['band'];
+echo $_POST['genre'];
 
- $sql = "INSERT INTO MyGuests (bandname) values ('$band')";
- if($conn->query($sql) === true) {
-        echo "<br><br>updated<br><br>";
-    }else{
-        echo "<br><br>Error: <br><br>" . $conn->error;  
-    }
+ $bandname = $_POST['naam'];
+
+ $sql = "INSERT INTO MyGuests (bandname) values ('$bandname')";
 
 $result = $conn->query($sql);
 if ($result){
@@ -60,13 +57,8 @@ if ($result){
     echo "<br><br>het is niet gelukt!<br><br>";
 }
 
-// while($row = $result->fetch_assoc()){
-// echo "$row";
-// }if ($result->num_rows>0){
-//     echo "oops";
-// }
-
-
+$query = $conn->query("SELECT * FROM bandname");
+}
 
 ?>
 
