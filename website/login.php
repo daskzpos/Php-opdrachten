@@ -12,8 +12,8 @@ require ('conn database.php');
     <link href="styles.css" rel="stylesheet">
     <title>invulformulier</title>
 </head>
-<body>
-<method="post" action="http://localhost/php-opdrachten/website/login.php"></method>
+<f>
+<method="POST" action="http://localhost/php-opdrachten/website/login.php"></method>
 <header>
    <a href="http://localhost/php-opdrachten/website/website.php">HOME</a>
 </header>
@@ -27,10 +27,10 @@ require ('conn database.php');
    <p>password</p>
    <input type="password" name="pw">
 <br><br>
-   <input type="submit">
 </form>
-
-
+<h2>
+  <p>Don't have an account?<a href="http://localhost/php-opdrachten/website/register.php">REGISTER HERE</a></p> 
+</h2>
 <?php
 
 ?>

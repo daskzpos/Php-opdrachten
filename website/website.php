@@ -13,9 +13,10 @@ require ('conn database.php');
 </head>
 <body>
 <method="post" action="http://localhost/php-opdrachten/website/website.php"></method>
-<header>
-    <a href="http://localhost/php-opdrachten/website/login.php">LOGIN<a>
-    <a href="http://localhost/php-opdrachten/website/createband.php">PROGAMMA<a>
+<header>    
+    <a href="http://localhost/php-opdrachten/website/createband.php">PROGAMMA<>
+    <a href="http://localhost/php-opdrachten/website/register.php">REGISTER<>
+    <a href="http://localhost/php-opdrachten/website/login.php">LOGIN<>
 </header>
 <br> <br>
 <h1>PROGAMMA</h1>
